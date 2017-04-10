@@ -1,0 +1,37 @@
+.info {
+	max-width: 100%;
+	width: 900px;
+	margin: 0 auto;
+	/*background-color: #f00;*/
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.info-headin {}
+
+.info-headin>.info-title {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.info-body {}
+
+.info-title {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.info-title>a {
+	text-decoration: none;
+	color: #313233;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
