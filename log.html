@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
-		<title>EVE-Card | 关于我们</title>
+		<title>EVE-Card | 开发日志</title>
 
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/animate.css" />
@@ -25,11 +25,11 @@
 			}
 			
 			.box-img {
-				background-image: url(img/b-about.jpg);
+				background-image: url(img/3.jpg);
 			}
 			
 			.footer-img {
-				background-image: url(img/b-about.jpg);
+				background-image: url(img/3.jpg);
 			}
 			
 			.title-lg {
@@ -66,7 +66,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">EVECard-关于我们</a>
+						<a class="navbar-brand" href="#">EVECard-开发日志</a>
 					</div>
 
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -84,30 +84,26 @@
 								<a href="add.html">加入我们</a>
 							</li>
 							<li>
-								<a href="about.html" class="active">关于我们</a>
+								<a href="about.html">关于我们</a>
 							</li>
 							<li>
-								<a href="log.html">开发日志</a>
+								<a href="log.html" class="active">开发日志</a>
 							</li>
 							<li>
 								<a href="bbs.html">社区</a>
 							</li>
+
 						</ul>
 					</div>
 
+					<!-- /.navbar-collapse -->
 				</div>
+				<!-- /.container-fluid -->
 			</nav>
 			<div class="title-lg">
-
-				关于我们
+				开发日志
 				<br />
-				<p>
-					<audio id='video1' controls loop autoplay>
-						<source src="audio/a.mp3" type="audio/mp3">
-						</source>
-					</audio>
-				</p>
-				<span class="glyphicon glyphicon-chevron-down text-sm animated fadeInUp"></span>
+				<span class="text-sm">等待更新……</span>
 
 			</div>
 			<div class="Mask"></div>
@@ -115,62 +111,17 @@
 
 		</div>
 
-		<div class="box">
-
-			<div class="info">
-				<div class="info-headin">
-					<div class="info-title">
-						我们
-					</div>
-				</div>
-
-				<div class="info-body">
-					<div class="info-title">
-						我们是EVE的玩家
-					</div>
-					<div class="text-center">
-
-						<p>我们对EVE有着不可磨灭的热情</p>
-						<p>是梦想、理想这些不可轻易得到的东西驱动着我们进行开发</p>
-						<p>我们不为钱，我们只为将EVE延续下去</p>
-						<p>我们只是想在任何地方都可以去玩EVE，一个真正的玩家主宰游戏的游戏</p>
-
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-		<div class="footer">
-
-			<div class="footer-head">
-				<div class="footer-title"></div>
-			</div>
-			<div class="footer-body">
-				<div class="footer-title">
-				</div>
-
-				<div class="text-center">
-					<div>©&nbsp;2017&nbsp;EVECard,&nbsp;KDE,&nbsp;起源计划网络科技工作室</div>
-					<div>技术由&nbsp;起源计划网络科技工作室——EVECard小组&nbsp;提供</div>
-					<div>EVECard首席创意总监KDE保留所有解释权</div>
-				</div>
-
-			</div>
-			<div class="footer-footer">
-				<div>EVE 版权归官方，EVECard 创意由EVECard开发小组保留最终解释权</div>
-				<div>本页面所有图片均从互联网上获取，如果侵权，请通知我方，我方会尽快删除</div>
-			</div>
-			<div class="footer-img"></div>
-			<div class="footer-Mask"></div>
-		</div>
 		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$("#video1")[0].volume = 0.2;
+			qyui.navbarBackgroundColor = '#060D12';
 
-			qyui.navbarBackgroundColor = '#202126';
+			function setImg() {
+				var i = parseInt(Math.random() * 3) + 1;
+				$('.footer-img').css('background-image', 'url(img/' + i + '.jpg)');
+				$('.box-img').css('background-image', 'url(img/' + i + '.jpg)');
+			}
 		</script>
 	</body>
 
